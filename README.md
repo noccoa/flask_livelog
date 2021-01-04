@@ -9,9 +9,9 @@ Scrolls automatically along the end of the file. When the scrollbar is moved mor
 The scroll window detects when
  - A file is missing: Wait for a file to appear.
  - A file has been created: Logging starts.
- - A file dissapeared: The file will remains on the page.
+ - A file disappeared: The file will remains on the page.
 
-Scroll update is done very efficiently in as big as possible chuncks. This may be a entire file or just a part of the line - for example when pytest draws a '.' for each successful test.
+Scroll update is done very efficiently in as big as possible chuncks. This may be an entire file or just a part of the line - for example when pytest draws a '.' for each successful test.
 
 ### File select form
 This optional form allows to select from a given list of files.
@@ -22,14 +22,14 @@ This optional form allows to select from a given list of files.
 Display a logfile and mark the lines which contain `ERROR`, `WARINING`, `INFO`.
 
 ### Renderer `Ansi2Html`
-Takes a ansi file as input (`pytest --color=yes`).
+Take an ansi file as input (`pytest --color=yes`).
 
 ### Renderer `LIVELOG_MOCK`
 For testing: Slowly sends line by line to demonstrate updating and scrolling.
 
 ### Generator `generator_file`
 
-This generator redirects a file. It detects when a file appears and dissapears.
+This generator redirects a file. It detects when a file appears and disapears.
 
 ### Generator `generator_pipe`
 
